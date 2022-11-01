@@ -59,10 +59,10 @@
 
         NAV_LAYER {
             bindings = <
-         &kp F1            &kp F2        &kp F3            &kp F4   &kp F5    &kp F6          &kp F7  &kp F8     &kp F9  &kp F10
- &sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &kp ESC  &kp LEFT  &kp DOWN_ARROW  &kp UP  &kp RIGHT  &kp F11
-         &trans            &trans        &trans            &trans   &trans    &trans          &trans  &trans     &trans  &kp F12
-                                                           &trans   &trans    &trans          &trans
+  &kp F1            &kp F2        &kp F3            &kp F4          &kp F5    &kp F6          &kp F7  &kp F8     &kp F9  &kp F10
+ &kp ESC  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &sk LEFT_SHIFT  &kp LEFT  &kp DOWN_ARROW  &kp UP  &kp RIGHT  &kp F11
+  &trans            &trans        &trans            &trans          &trans    &trans          &trans  &trans     &trans  &kp F12
+                                                    &trans          &trans    &trans          &trans
             >;
         };
     };
