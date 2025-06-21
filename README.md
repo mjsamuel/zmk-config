@@ -1,3 +1,3 @@
 # zmk-config
-Keyboard layout for my [sweep](https://github.com/davidphilipbarr/Sweep):
+Keyboard layout for my [urchin](https://github.com/duckyb/urchin):
 <img src="/diagram.png"/>
