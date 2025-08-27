@@ -143,10 +143,10 @@
         LOWER {
             label = "LOWER";
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &kp DOWN  &kp RIGHT  &trans  &trans  &trans
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &kp LEFT  &trans     &trans  &trans  &trans
-&kp F11  &kp F12  &trans  &trans  &trans   &kp UP    &trans     &trans  &trans  &trans
-                          &trans  &trans   &trans    &trans
+&trans  &kp F1  &kp F2  &kp F3  &trans  &kp DOWN  &kp RIGHT  &trans   &trans   &trans
+&trans  &kp F4  &kp F5  &kp F6  &trans  &kp LEFT  &kp F10    &kp F11  &kp F12  &trans
+&trans  &kp F7  &kp F8  &kp F9  &trans  &kp UP    &trans     &trans   &trans   &trans
+                        &trans  &trans  &trans    &trans
             >;
         };
 
