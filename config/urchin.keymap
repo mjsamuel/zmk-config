@@ -117,8 +117,8 @@
             label = "DEFAULT";
             bindings = <
 &kp Q                &kp W                  &kp F              &kp P              &kp G           &kp J                     &kp L              &kp U                  &kp Y                    &kp SEMI
-&kp A                &kp R                  &kp S              &kp T              &kp D           &kp H                     &kp N              &kp E                  &kp I                    &kp O
-&hrm_l LEFT_SHIFT Z  &hrm_l LEFT_CONTROL X  &hrm_l LEFT_ALT C  &hrm_l LEFT_GUI V  &hrm_l HYPER B  &hrm_r HYPER K            &hrm_r LEFT_GUI M  &hrm_r LEFT_ALT COMMA  &hrm_r LEFT_CONTROL DOT  &hrm_r LSHFT SLASH
+&kp A                &kp R                  &kp S              &hrm_l HYPER T     &kp D           &kp H                     &hrm_r HYPER N     &kp E                  &kp I                    &kp O
+&hrm_l LEFT_SHIFT Z  &hrm_l LEFT_CONTROL X  &hrm_l LEFT_ALT C  &hrm_l LEFT_GUI V  &kp B           &kp K                     &hrm_r LEFT_GUI M  &hrm_r LEFT_ALT COMMA  &hrm_r LEFT_CONTROL DOT  &hrm_r LSHFT SLASH
                                                                &lt 1 ENTER        &kp SPACE       &mt LEFT_SHIFT BACKSPACE  &lt 2 TAB
             >;
         };
