@@ -126,20 +126,20 @@
         LOWER {
             label = "LOWER";
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &trans  &kp DOWN  &kp RIGHT  &trans   &trans   &trans
-&trans  &kp F4  &kp F5  &kp F6  &trans  &kp LEFT  &kp F10    &kp F11  &kp F12  &trans
-&trans  &kp F7  &kp F8  &kp F9  &trans  &kp UP    &trans     &trans   &trans   &trans
-                        &trans  &trans  &trans    &trans
+&trans  &kp F1  &kp F2  &kp F3           &trans  &kp DOWN  &kp RIGHT         &trans   &trans   &trans
+&trans  &kp F4  &kp F5  &hrm_l HYPER F6  &trans  &kp LEFT  &hrm_r HYPER F10  &kp F11  &kp F12  &trans
+&trans  &kp F7  &kp F8  &kp F9           &trans  &kp UP    &trans            &trans   &trans   &trans
+                        &trans           &trans  &trans    &trans
             >;
         };
 
         RAISE {
             label = "RAISE";
             bindings = <
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp AMPERSAND    &kp BACKSLASH   &kp AT_SIGN  &kp ASTERISK  &kp CARET  &kp DOLLAR
-&kp PERCENT   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PIPE         &kp TILDE       &kp MINUS    &kp PLUS      &kp EQUAL  &kp GRAVE
-&kp HASH      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EXCLAMATION  &kp UNDERSCORE  &trans       &trans        &trans     &trans
-                                          &trans        &trans           &trans          &trans
+&kp NUMBER_0            &kp NUMBER_1                  &kp NUMBER_2              &kp NUMBER_3              &kp AMPERSAND    &kp BACKSLASH   &kp AT_SIGN         &kp ASTERISK  &kp CARET  &kp DOLLAR
+&kp PERCENT             &kp NUMBER_4                  &kp NUMBER_5              &hrm_l HYPER NUMBER_6     &kp PIPE         &kp TILDE       &hrm_r HYPER MINUS  &kp PLUS      &kp EQUAL  &kp GRAVE
+&hrm_l LEFT_SHIFT HASH  &hrm_l LEFT_CONTROL NUMBER_7  &hrm_l LEFT_ALT NUMBER_8  &hrm_l LEFT_GUI NUMBER_9  &kp EXCLAMATION  &kp UNDERSCORE  &trans              &trans        &trans     &trans
+                                                                                &trans                    &trans           &trans          &trans
             >;
         };
 
