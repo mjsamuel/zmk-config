@@ -1,24 +1,21 @@
 manifest:
   remotes:
-    # zmk official
-    - name: zmkfirmware
+    - name: zmkfirmware # zmk official
       url-base: https://github.com/zmkfirmware
-      # kyek / duckyb
-    - name: duckyb
+    - name: duckyb # kyek / duckyb
       url-base: https://github.com/duckyb
-      # nice-view-gem
-    - name: m165437
+    - name: m165437 # nice-view-gem
       url-base: https://github.com/M165437
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3
       import: app/west.yml
     - name: urchin-zmk-module
       remote: duckyb
       revision: main
     - name: nice-view-gem
       remote: m165437
-      revision: main
+      revision: v0.3.0
   self:
     path: config

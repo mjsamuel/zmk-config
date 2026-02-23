@@ -13,16 +13,24 @@
 #define THUMB_KEYS 30 31 32 33
 
 #define HYPER LG(LC(LA(LSHIFT)))
+
+// If the key is tapped and then tapped again within this time, it will register
+// as a the tap behaviour instead of the hold behaviour.
 #define QUICK_TAP_MS 175
 
 #define HRM_PROPS \
+    compatible = "zmk,behavior-hold-tap"; \
+    #binding-cells = <2>; \
+    flavor = "balanced"; \
+    hold-trigger-on-release; \
     quick-tap-ms = <QUICK_TAP_MS>; \
     tapping-term-ms = <280>; \
-    require-prior-idle-ms = <150>;
+    require-prior-idle-ms = <150>; \
+    bindings = <&kp>, <&kp>;
 
 #define COMBO_PROPS \
-    timeout-ms = <30>; \
-    require-prior-idle-ms = <125>; \
+    timeout-ms = <50>; \
+    require-prior-idle-ms = <150>; \
     layers = <DEFAULT>;
 
 &mt {
@@ -88,24 +96,14 @@
 
     behaviors {
         hrm_l: left_homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT";
-            #binding-cells = <2>;
-            flavor = "balanced";
             hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
-            hold-trigger-on-release;
-            bindings = <&kp>, <&kp>;
             HRM_PROPS
         };
 
         hrm_r: right_homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_RIGHT";
-            #binding-cells = <2>;
-            flavor = "balanced";
             hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS> ;
-            hold-trigger-on-release;
-            bindings = <&kp>, <&kp>;
             HRM_PROPS
         };
     };
