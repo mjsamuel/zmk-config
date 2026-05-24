@@ -114,30 +114,30 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&kp Q                &kp W                  &kp F              &kp P              &kp G           &kp J                     &kp L              &kp U                  &kp Y                    &kp SEMI
-&kp A                &kp R                  &kp S              &hrm_l HYPER T     &kp D           &kp H                     &hrm_r HYPER N     &kp E                  &kp I                    &kp O
-&hrm_l LEFT_SHIFT Z  &hrm_l LEFT_CONTROL X  &hrm_l LEFT_ALT C  &hrm_l LEFT_GUI V  &kp B           &kp K                     &hrm_r LEFT_GUI M  &hrm_r LEFT_ALT COMMA  &hrm_r LEFT_CONTROL DOT  &hrm_r LSHFT SLASH
-                                                               &lt 1 ENTER        &kp SPACE       &mt LEFT_SHIFT BACKSPACE  &lt 2 TAB
+&kp Q                &kp W                  &kp F              &kp P              &kp G            &kp J                     &kp L              &kp U              &kp Y                  &kp SEMI
+&hrm_l LEFT_SHIFT A  &hrm_l LEFT_CONTROL R  &hrm_l LEFT_ALT S  &hrm_l LEFT_GUI T  &kp D            &kp H                     &hrm_r LEFT_GUI N  &hrm_r LEFT_ALT E  &hrm_r LEFT_CONTROL I  &hrm_r LSHFT O
+&kp Z                &kp X                  &kp C              &kp V              &kp B            &kp K                     &kp M              &kp COMMA          &kp DOT                &kp SLASH
+                                                               &lt 1 ENTER        &mt HYPER SPACE  &mt LEFT_SHIFT BACKSPACE  &lt 2 TAB
             >;
         };
 
         LOWER {
             label = "LOWER";
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3           &trans  &kp DOWN  &kp RIGHT         &trans   &trans   &trans
-&trans  &kp F4  &kp F5  &hrm_l HYPER F6  &trans  &kp LEFT  &hrm_r HYPER F10  &kp F11  &kp F12  &trans
-&trans  &kp F7  &kp F8  &kp F9           &trans  &kp UP    &trans            &trans   &trans   &trans
-                        &trans           &trans  &trans    &trans
+&trans  &kp F1  &kp F2  &kp F3  &trans  &kp DOWN  &kp RIGHT  &trans   &trans   &trans
+&trans  &kp F4  &kp F5  &kp F6  &trans  &kp LEFT  &kp F10    &kp F11  &kp F12  &trans
+&trans  &kp F7  &kp F8  &kp F9  &trans  &kp UP    &trans     &trans   &trans   &trans
+                        &trans  &trans  &trans    &trans
             >;
         };
 
         RAISE {
             label = "RAISE";
             bindings = <
-&kp NUMBER_0            &kp NUMBER_1                  &kp NUMBER_2              &kp NUMBER_3              &kp AMPERSAND    &kp BACKSLASH   &kp AT_SIGN         &kp ASTERISK  &kp CARET  &kp DOLLAR
-&kp PERCENT             &kp NUMBER_4                  &kp NUMBER_5              &hrm_l HYPER NUMBER_6     &kp PIPE         &kp TILDE       &hrm_r HYPER MINUS  &kp PLUS      &kp EQUAL  &kp GRAVE
-&hrm_l LEFT_SHIFT HASH  &hrm_l LEFT_CONTROL NUMBER_7  &hrm_l LEFT_ALT NUMBER_8  &hrm_l LEFT_GUI NUMBER_9  &kp EXCLAMATION  &kp UNDERSCORE  &trans              &trans        &trans     &trans
-                                                                                &trans                    &trans           &trans          &trans
+&kp NUMBER_0              &kp NUMBER_1                  &kp NUMBER_2              &kp NUMBER_3              &kp AMPERSAND    &kp BACKSLASH   &kp AT_SIGN            &kp ASTERISK          &kp CARET                  &kp DOLLAR
+&hrm_l LEFT_SHIFT PERCENT &hrm_l LEFT_CONTROL NUMBER_4  &hrm_l LEFT_ALT NUMBER_5  &hrm_l LEFT_GUI NUMBER_6  &kp PIPE         &kp TILDE       &hrm_r LEFT_GUI MINUS  &hrm_r LEFT_ALT PLUS  &hrm_r LEFT_CONTROL EQUAL  &hrm_r LSHFT GRAVE
+&kp HASH                  &kp NUMBER_7                  &kp NUMBER_8              &kp NUMBER_9              &kp EXCLAMATION  &kp UNDERSCORE  &trans                 &trans                &trans                     &trans
+                                                                                  &trans                    &trans           &trans          &trans
             >;
         };
 
