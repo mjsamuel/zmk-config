@@ -65,13 +65,13 @@
             COMBO_PROPS
         };
 
-        combo_left_paran {
+        combo_left_paren {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <17 16>;
             COMBO_PROPS
         };
 
-        combo_right_paran {
+        combo_right_paren {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <17 18>;
             COMBO_PROPS
@@ -80,6 +80,12 @@
         combo_quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <26 27>;
+            COMBO_PROPS
+        };
+
+        combo_hyper {
+            bindings = <&kp HYPER>;
+            key-positions = <31 32>;
             COMBO_PROPS
         };
     };
@@ -114,10 +120,10 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&kp Q                &kp W                  &kp F              &kp P              &kp G            &kp J                     &kp L              &kp U              &kp Y                  &kp SEMI
-&hrm_l LEFT_SHIFT A  &hrm_l LEFT_CONTROL R  &hrm_l LEFT_ALT S  &hrm_l LEFT_GUI T  &kp D            &kp H                     &hrm_r LEFT_GUI N  &hrm_r LEFT_ALT E  &hrm_r LEFT_CONTROL I  &hrm_r LSHFT O
-&kp Z                &kp X                  &kp C              &kp V              &kp B            &kp K                     &kp M              &kp COMMA          &kp DOT                &kp SLASH
-                                                               &lt 1 ENTER        &mt HYPER SPACE  &mt LEFT_SHIFT BACKSPACE  &lt 2 TAB
+&kp Q                &kp W                  &kp F              &kp P              &kp G      &kp J                     &kp L              &kp U              &kp Y                  &kp SEMI
+&hrm_l LEFT_SHIFT A  &hrm_l LEFT_CONTROL R  &hrm_l LEFT_ALT S  &hrm_l LEFT_GUI T  &kp D      &kp H                     &hrm_r LEFT_GUI N  &hrm_r LEFT_ALT E  &hrm_r LEFT_CONTROL I  &hrm_r LSHFT O
+&kp Z                &kp X                  &kp C              &kp V              &kp B      &kp K                     &kp M              &kp COMMA          &kp DOT                &kp SLASH
+                                                               &lt 1 ENTER        &kp SPACE  &mt LEFT_SHIFT BACKSPACE  &lt 2 TAB
             >;
         };
 
