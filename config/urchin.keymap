@@ -82,12 +82,6 @@
             key-positions = <26 27>;
             COMBO_PROPS
         };
-
-        combo_hyper {
-            bindings = <&kp HYPER(S)>;
-            key-positions = <31 32>;
-            COMBO_PROPS
-        };
     };
 
     macros {
