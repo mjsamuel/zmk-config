@@ -14,6 +14,9 @@
 
 #define HYPER LG(LC(LA(LSHIFT)))
 
+#define HML(mod, key) &hrm_l mod key
+#define HMR(mod, key) &hrm_r mod key
+
 // If the key is tapped and then tapped again within this time, it will register
 // as a the tap behaviour instead of the hold behaviour.
 #define QUICK_TAP_MS 175
@@ -29,7 +32,7 @@
     bindings = <&kp>, <&kp>;
 
 #define COMBO_PROPS \
-    timeout-ms = <60>; \
+    timeout-ms = <55>; \
     require-prior-idle-ms = <125>; \
     layers = <DEFAULT>;
 
@@ -54,31 +57,31 @@
         };
 
         combo_left_bracket {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp LBKT>;
             key-positions = <7 6>;
             COMBO_PROPS
         };
 
         combo_right_bracket {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp RBKT>;
             key-positions = <7 8>;
             COMBO_PROPS
         };
 
         combo_left_paren {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp LPAR>;
             key-positions = <17 16>;
             COMBO_PROPS
         };
 
         combo_right_paren {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp RPAR>;
             key-positions = <17 18>;
             COMBO_PROPS
         };
 
         combo_quote {
-            bindings = <&kp SINGLE_QUOTE>;
+            bindings = <&kp SQT>;
             key-positions = <26 27>;
             COMBO_PROPS
         };
@@ -114,30 +117,30 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&kp Q                &kp W                  &kp F              &kp P              &kp G           &kp J                     &kp L              &kp U              &kp Y                  &kp SEMI
-&hrm_l LEFT_SHIFT A  &hrm_l LEFT_CONTROL R  &hrm_l LEFT_ALT S  &hrm_l LEFT_GUI T  &hrm_l HYPER D  &hrm_r HYPER H            &hrm_r LEFT_GUI N  &hrm_r LEFT_ALT E  &hrm_r LEFT_CONTROL I  &hrm_r LSHFT O
-&kp Z                &kp X                  &kp C              &kp V              &kp B           &kp K                     &kp M              &kp COMMA          &kp DOT                &kp SLASH
-                                                               &lt 1 ENTER        &kp SPACE       &mt LEFT_SHIFT BACKSPACE  &lt 2 TAB
+&kp Q          &kp W          &kp F         &kp P          &kp G          &kp J           &kp L          &kp U         &kp Y          &kp SEMI
+HML(LSHFT, A)  HML(LCTRL, R)  HML(LALT, S)  HML(LGUI, T)   HML(HYPER, D)  HMR(HYPER, H)   HMR(LGUI, N)   HMR(LALT, E)  HMR(LCTRL, I)  HMR(LSHFT, O)
+&kp Z          &kp X          &kp C         &kp V          &kp B          &kp K           &kp M          &kp COMMA     &kp DOT        &kp SLASH
+                                            &lt LOWER RET  &kp SPACE      &mt LSHFT BSPC  &lt RAISE TAB
             >;
         };
 
         LOWER {
             label = "LOWER";
             bindings = <
-&trans  &kp F1                  &kp F2              &kp F3              &trans  &kp DOWN  &kp RIGHT            &trans               &trans                   &trans
-&trans  &hrm_l LEFT_CONTROL F4  &hrm_l LEFT_ALT F5  &hrm_l LEFT_GUI F6  &trans  &kp LEFT  &hrm_r LEFT_GUI F10  &hrm_r LEFT_ALT F11  &hrm_r LEFT_CONTROL F12  &trans
-&trans  &kp F7                  &kp F8              &kp F9              &trans  &kp UP    &trans               &trans               &trans                   &trans
-                                                    &trans              &trans  &trans    &trans
+&trans  &kp F1          &kp F2         &kp F3         &trans  &kp DOWN  &kp RIGHT       &trans          &trans           &trans
+&trans  HML(LCTRL, F4)  HML(LALT, F5)  HML(LGUI, F6)  &trans  &kp LEFT  HMR(LGUI, F10)  HMR(LALT, F11)  HMR(LCTRL, F12)  &trans
+&trans  &kp F7          &kp F8         &kp F9         &trans  &kp UP    &trans          &trans          &trans           &trans
+                                       &trans         &trans  &trans    &trans
             >;
         };
 
         RAISE {
             label = "RAISE";
             bindings = <
-&kp NUMBER_0               &kp NUMBER_1                  &kp NUMBER_2              &kp NUMBER_3              &kp AMPERSAND      &kp BACKSLASH       &kp AT_SIGN            &kp ASTERISK          &kp CARET                  &kp DOLLAR
-&hrm_l LEFT_SHIFT PERCENT  &hrm_l LEFT_CONTROL NUMBER_4  &hrm_l LEFT_ALT NUMBER_5  &hrm_l LEFT_GUI NUMBER_6  &hrm_l HYPER PIPE  &hrm_r HYPER TILDE  &hrm_r LEFT_GUI MINUS  &hrm_r LEFT_ALT PLUS  &hrm_r LEFT_CONTROL EQUAL  &hrm_r LSHFT GRAVE
-&kp HASH                   &kp NUMBER_7                  &kp NUMBER_8              &kp NUMBER_9              &kp EXCLAMATION    &kp UNDERSCORE      &trans                 &trans                &trans                     &trans
-                                                                                   &trans                    &trans             &trans              &trans
+&kp N0             &kp N1          &kp N2         &kp N3         &kp AMPS          &kp BSLH           &kp AT            &kp STAR         &kp CARET          &kp DLLR
+HML(LSHFT, PRCNT)  HML(LCTRL, N4)  HML(LALT, N5)  HML(LGUI, N6)  HML(HYPER, PIPE)  HMR(HYPER, TILDE)  HMR(LGUI, MINUS)  HMR(LALT, PLUS)  HMR(LCTRL, EQUAL)  HMR(LSHFT, GRAVE)
+&kp HASH           &kp N7          &kp N8         &kp N9         &kp EXCL          &kp UNDER          &trans            &trans           &trans             &trans
+                                                  &trans         &trans            &trans             &trans
             >;
         };
 
