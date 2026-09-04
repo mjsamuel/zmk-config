@@ -1,0 +1,164 @@
+layout: {zmk_keyboard: urchin}
+layers:
+  DEFAULT:
+  - Q
+  - W
+  - F
+  - P
+  - G
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - {t: A, h: LSHFT}
+  - {t: R, h: LCTRL}
+  - {t: S, h: LALT}
+  - {t: T, h: LGUI}
+  - {t: D, h: Hyper}
+  - {t: H, h: Hyper}
+  - {t: N, h: LGUI}
+  - {t: E, h: LALT}
+  - {t: I, h: LCTRL}
+  - {t: O, h: LSHFT}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - K
+  - M
+  - ','
+  - .
+  - /
+  - {t: RET, h: LOWER}
+  - SPACE
+  - {t: BSPC, h: LSHFT}
+  - {t: TAB, h: RAISE}
+  LOWER:
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - {t: ▽, type: trans}
+  - ↓
+  - →
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: F4, h: LCTRL}
+  - {t: F5, h: LALT}
+  - {t: F6, h: LGUI}
+  - {t: ▽, type: trans}
+  - ←
+  - {t: F10, h: LGUI}
+  - {t: F11, h: LALT}
+  - {t: F12, h: LCTRL}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F7
+  - F8
+  - F9
+  - {t: ▽, type: trans}
+  - ↑
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  RAISE:
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '&'
+  - \
+  - '@'
+  - '*'
+  - ^
+  - $
+  - {t: '%', h: LSHFT}
+  - {t: '4', h: LCTRL}
+  - {t: '5', h: LALT}
+  - {t: '6', h: LGUI}
+  - {t: '|', h: Hyper}
+  - {t: '~', h: Hyper}
+  - {t: '-', h: LGUI}
+  - {t: +, h: LALT}
+  - {t: '=', h: LCTRL}
+  - {t: '`', h: LSHFT}
+  - '#'
+  - '7'
+  - '8'
+  - '9'
+  - '!'
+  - _
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  ADJUST:
+  - Lock
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '3'}
+  - BRI DEC
+  - BRI INC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - MUTE
+  - PLAY PAUSE
+  - {t: BT, h: '1'}
+  - {t: BT, h: '4'}
+  - VOL DN
+  - VOL UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BT, h: '2'}
+  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+combos:
+- p: [12, 13]
+  k: Alt+TAB
+  l: [DEFAULT]
+- p: [11, 12]
+  k: ESC
+  l: [DEFAULT]
+- p: [7, 6]
+  k: '['
+  l: [DEFAULT]
+- p: [7, 8]
+  k: ']'
+  l: [DEFAULT]
+- p: [17, 16]
+  k: (
+  l: [DEFAULT]
+- p: [17, 18]
+  k: )
+  l: [DEFAULT]
+- p: [26, 27]
+  k: ''''
+  l: [DEFAULT]

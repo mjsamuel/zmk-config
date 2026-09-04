@@ -1,0 +1,12 @@
+parse_config:
+  # Give custom behaviors and keycodes concise labels in the generated diagram.
+  raw_binding_map:
+    "&quick_lock": Lock
+    "&kp DOWN": "↓"
+    "&kp RIGHT": "→"
+    "&kp LEFT": "←"
+    "&kp UP": "↑"
+    "&hrm_l LG(LC(LA(LSHIFT))) D": {t: D, h: Hyper}
+    "&hrm_r LG(LC(LA(LSHIFT))) H": {t: H, h: Hyper}
+    "&hrm_l LG(LC(LA(LSHIFT))) PIPE": {t: "|", h: Hyper}
+    "&hrm_r LG(LC(LA(LSHIFT))) TILDE": {t: "~", h: Hyper}

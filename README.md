@@ -1,3 +1,4 @@
 # zmk-config
 Keyboard layout for my [urchin](https://github.com/duckyb/urchin):
-<img src="./misc/keymap.png"/>
+
+<img src="./keymap-drawer/urchin.svg" alt="Urchin keymap"/>
